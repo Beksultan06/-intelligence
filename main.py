@@ -1,3 +1,5 @@
+from model import extract_features, train_classifier, predict_sentiment
+# Здесь вы можете использовать функции и классы из model.py
 import nltk, spacy, spacy.cli
 from googletrans import Translator
 import nltk
@@ -67,3 +69,7 @@ while True:
     # Выведите перевод и тональность
     print(f"Перевод на {target_language}: {translated_text}")
     print(f"Тональность: {sentiment[0]}")
+
+extract_features()
+train_classifier()
+predict_sentiment()
